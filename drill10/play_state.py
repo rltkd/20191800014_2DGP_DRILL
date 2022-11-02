@@ -17,7 +17,7 @@ class Boy:
         self.frame = 0
         self.dir = 1
         count = 1
-        self.image[count] = load_image('animation_sheet.png')
+        self.image = load_image('animation_sheet.png')
         self.ball_image = load_image('ball21x21.png')
         self.big_ball_image = load_image('ball41x41.png')
         self.item = None
