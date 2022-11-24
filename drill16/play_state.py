@@ -18,7 +18,7 @@ def enter():
     server.boy = Boy()
     game_world.add_object(server.boy, 1)
 
-    ball_list = [Ball() for i in range(30)]
+    ball_list = [Ball() for i in range(100)]
     game_world.add_objects(ball_list, 1)
 
     server.background = Background()

@@ -3,14 +3,14 @@ from pico2d import *
 import game_world
 import game_framework
 import server
-
+from background import FixedBackground
 class Ball:
     image = None
 
     def __init__(self):
         if Ball.image == None:
             Ball.image = load_image('ball21x21.png')
-        self.x, self.y, self.fall_speed = random.randint(0, get_canvas_width()), random.randint(0, get_canvas_height()), 0
+        self.x, self.y, self.fall_speed = random.randint(0, 1837), random.randint(0,1109), 0
 
     def get_bb(self):
         # fill here
